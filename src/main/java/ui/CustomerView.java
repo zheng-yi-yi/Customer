@@ -35,25 +35,18 @@ public class CustomerView {
 
             char menu = CMUtility.readMenuSelection();
 
-            switch (menu){
-                case '1':
-                    addNewCustomer();
-                    break;
-                case '2':
-                    modifyCustomer();
-                    break;
-                case '3':
-                    deleteCustomer();
-                    break;
-                case '4':
-                    listAllCustomer();
-                    break;
-                case '5':
+            switch (menu) {
+                case '1' -> addNewCustomer();
+                case '2' -> modifyCustomer();
+                case '3' -> deleteCustomer();
+                case '4' -> listAllCustomer();
+                case '5' -> {
                     System.out.print("请确认是否要退出（Y/N）：");
                     char c = CMUtility.readConfirmSelection();
-                    if( c == 'Y'){
+                    if (c == 'Y') {
                         isFlag = false;
                     }
+                }
             }
         }
     }
