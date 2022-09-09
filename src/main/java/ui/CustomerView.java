@@ -138,10 +138,7 @@ public class CustomerView {
         if(isDelete == 'Y'){
             customerList.deleteCustomer(number - 1);
             System.out.println("------------------------删除成功------------------------");
-        }else {
-            return;
         }
-
     }
     /**
      * @Description 显示客户列表
